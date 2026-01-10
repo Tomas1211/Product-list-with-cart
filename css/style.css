@@ -67,6 +67,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.2s ease-in;
+}
+.dessert__add-to-cart-btn:hover {
+  color: hsl(14, 86%, 42%);
+  border-color: hsl(14, 86%, 42%);
 }
 
 #emptyCart {
