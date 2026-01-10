@@ -20,7 +20,7 @@ fetch("./data.json")
             <source media="(min-width:760px)" srcset="${item.image.tablet}">
             <img src="${item.image.mobile}">
             </picture>
-            <button class="dessert__add-to-cart-btn">Add to Cart</button>
+            <button class="dessert__add-to-cart-btn"><span class="cart-icon"><img src="./assets/images/icon-add-to-cart.svg" alt="Cart icon"></span>Add to Cart</button>
         </div>
         <div class="dessert__info">
           <p class="dessert__category">${dessertCategory}</p>

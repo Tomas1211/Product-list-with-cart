@@ -13,16 +13,22 @@ $rose-900: hsl(14, 65%, 9%);
 body {
   font-family: "Red Hat Text", sans-serif;
   background-color: $rose-50;
-
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 clamp(2rem, 5vw, 3rem);
+  min-height: 100dvh;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.attribution {
+  margin-top: auto;
 }
 
 .wrapper {
@@ -83,5 +89,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+#emptyCart {
+  background-color: #ffffff;
+  border-radius: .5rem;
+  padding: 1.875rem 1.5rem 2.5rem;
+
+  h2 {
+    margin-bottom: 2.5rem;
+  }
+  
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  p {
+    margin-top: 1.5rem;
+    text-align: center;
   }
 }

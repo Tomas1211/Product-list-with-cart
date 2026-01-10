@@ -2,15 +2,20 @@
 body {
   font-family: "Red Hat Text", sans-serif;
   background-color: hsl(24, 45%, 98%);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 clamp(2rem, 5vw, 3rem);
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.attribution {
+  margin-top: auto;
 }
 
 .wrapper {
@@ -62,4 +67,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#emptyCart {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.875rem 1.5rem 2.5rem;
+}
+#emptyCart h2 {
+  margin-bottom: 2.5rem;
+}
+#emptyCart img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#emptyCart p {
+  margin-top: 1.5rem;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
