@@ -1,4 +1,4 @@
-const listOfDesserts = document.querySelector("#desserts > .list-of-products")
+const listOfDesserts = document.querySelector("#desserts .list-of-products")
 
 
 // Fetching data from data.json
