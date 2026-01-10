@@ -3,7 +3,7 @@
 $color-danger: hsl(14, 86%, 42%);
 $color-success: hsl(159, 69%, 38%);
 
-$rose-50:  hsl(20, 50%, 98%);
+$rose-50:  hsl(24, 45%, 98%);
 $rose-100: hsl(13, 31%, 94%);
 $rose-300: hsl(14, 25%, 72%);
 $rose-400: hsl(7, 20%, 60%);
@@ -12,8 +12,10 @@ $rose-900: hsl(14, 65%, 9%);
 
 body {
   font-family: "Red Hat Text", sans-serif;
+  background-color: $rose-50;
 
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -23,6 +25,10 @@ body {
   padding: 0 clamp(2rem, 5vw, 3rem);
 }
 
+.wrapper {
+  position: relative;
+}
+
 #desserts .section-title {
   font-size: 2.25rem;
   margin: 2rem 0;
@@ -30,24 +36,52 @@ body {
 }
 
 .dessert {
+  max-width: 20.375rem;
   margin: 1.625rem 0;
-
+  
   &__image {
+
     img {
       border-radius: .5rem;
     }
   }
 
+  &__info {
+    margin-top: 2.5rem;
+  }
+
   &__category {
     color: $rose-500;
+    font-size: .875rem;
   }
 
   &__name {
     color: $rose-900;
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   &__price {
     color: $color-danger;
     font-weight: 600;
+  }
+
+  &__add-to-cart-btn {
+    position: absolute;
+    bottom: -1.375rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .75rem 1.5625rem .625rem;
+    border-radius: 2rem;
+    border: 1px solid $rose-300;
+    background-color: #ffffff;
+    font-weight: 600;
+    gap: 5px;
+    font-size: .75rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
