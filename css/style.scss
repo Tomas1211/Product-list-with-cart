@@ -28,3 +28,26 @@ body {
   margin: 2rem 0;
   color: $rose-900;
 }
+
+.dessert {
+  margin: 1.625rem 0;
+
+  &__image {
+    img {
+      border-radius: .5rem;
+    }
+  }
+
+  &__category {
+    color: $rose-500;
+  }
+
+  &__name {
+    color: $rose-900;
+  }
+
+  &__price {
+    color: $color-danger;
+    font-weight: 600;
+  }
+}

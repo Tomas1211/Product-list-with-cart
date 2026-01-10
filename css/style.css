@@ -15,4 +15,21 @@ body {
   font-size: 2.25rem;
   margin: 2rem 0;
   color: hsl(14, 65%, 9%);
+}
+
+.dessert {
+  margin: 1.625rem 0;
+}
+.dessert__image img {
+  border-radius: 0.5rem;
+}
+.dessert__category {
+  color: hsl(12, 20%, 44%);
+}
+.dessert__name {
+  color: hsl(14, 65%, 9%);
+}
+.dessert__price {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
