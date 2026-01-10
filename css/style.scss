@@ -12,4 +12,13 @@ $rose-900: hsl(14, 65%, 9%);
 
 body {
   font-family: "Red Hat Text", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(2rem, 5vw, 3rem);
 }

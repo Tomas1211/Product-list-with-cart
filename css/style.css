@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
 body {
   font-family: "Red Hat Text", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(2rem, 5vw, 3rem);
 }/*# sourceMappingURL=style.css.map */
