@@ -22,3 +22,9 @@ body {
   margin: 0 auto;
   padding: 0 clamp(2rem, 5vw, 3rem);
 }
+
+#desserts .section-title {
+  font-size: 2.25rem;
+  margin: 2rem 0;
+  color: $rose-900;
+}
