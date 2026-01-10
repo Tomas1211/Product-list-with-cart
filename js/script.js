@@ -22,7 +22,7 @@ fetch("./data.json")
         <div class="dessert__info">
           <p class="dessert__category">${dessertCategory}</p>
           <h3 class="dessert__name">${dessertName}</h3>
-          <p class="dessert__price">${dessertPrice}</p>
+          <p class="dessert__price">$${dessertPrice}</p>
         </div>
         <button class="add-to-cart-btn">Add to Cart</button>
       `
