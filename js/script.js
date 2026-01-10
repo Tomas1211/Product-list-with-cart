@@ -24,7 +24,7 @@ fetch("./data.json")
           <h3 class="dessert__name">${dessertName}</h3>
           <p class="dessert__price">$${dessertPrice}</p>
         </div>
-        <button class="add-to-cart-btn">Add to Cart</button>
+        <button class="dessert__add-to-cart-btn">Add to Cart</button>
       `
 
       listOfDesserts.appendChild(li)
