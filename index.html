@@ -16,6 +16,38 @@
 </head>
 <body>
 
+  <section class="products-section">
+    <header>
+      <h2 class="products-section__name">Desserts</h2>
+    </header>
+    <main class="products-section__content">
+      <ul class="products-list">
+        <li class="product">
+          <div class="product__image-wrapper">
+            <picture class="product__image">
+              <source media="(min-width:1024px)" srcset="./image1024.jpg">
+              <source media="(min-width:760px)" srcset="./image760.jpg">
+              <img src="https://picsum.photos/id/684/600/400" alt="">
+            </picture>
+            
+            <button class="product__add-to-cart-btn">
+              <svg class="icon" width="21" height="20" aria-hidden="true">
+                <use href="./assets/images/icon-add-to-cart.svg"></use>
+              </svg>
+              <span>Add to Cart</span>
+            </button>
+          </div>
+
+          <div class="product__info">
+            <span class="product__category">Waffle</span>
+            <h3 class="product__name">Waffle with Berries</h3>
+            <data class="product__price" value="6.50">$6.50</data>
+          </div>
+          
+        </li>
+      </ul>
+    </main>
+  </section>
   Desserts
 
   Waffle with Berries
