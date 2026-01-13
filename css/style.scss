@@ -4,3 +4,16 @@
 img {
   @include image;
 }
+
+body {
+}
+
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  margin-top: auto;
+}

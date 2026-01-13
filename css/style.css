@@ -3,4 +3,14 @@ img {
   width: 100%;
   max-width: 100%;
   display: block;
+}
+
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  margin-top: auto;
 }/*# sourceMappingURL=style.css.map */

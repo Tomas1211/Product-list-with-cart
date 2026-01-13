@@ -17,47 +17,60 @@
 </head>
 <body>
 
-  <section class="products-section">
-    <header>
-      <h2 class="products-section__name">Desserts</h2>
-    </header>
-    <main class="products-section__content">
-      <ul id="desserts" class="products-list">
-        <li class="product">
-          <div class="product__image-wrapper">
-            <picture class="product__image">
-              <source media="(min-width:1024px)" srcset="./image1024.jpg">
-              <source media="(min-width:760px)" srcset="./image760.jpg">
-              <img src="https://picsum.photos/id/684/600/400" alt="">
-            </picture>
+  <div class="page">
+
+    <section class="products-section">
+      <header>
+        <h2 class="products-section__title">Desserts</h2>
+      </header>
+      <main class="products-section__content">
+        <ul id="desserts" class="products-list">
+          <li class="product">
+            <div class="product__image-wrapper">
+              <picture class="product__image">
+                <source media="(min-width:1024px)" srcset="./image1024.jpg">
+                <source media="(min-width:760px)" srcset="./image760.jpg">
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+              </picture>
+              
+              <button class="product__add-to-cart-btn">
+                <svg class="icon" width="21" height="20" aria-hidden="true">
+                  <use href="./assets/images/icon-add-to-cart.svg"></use>
+                </svg>
+                <span>Add to Cart</span>
+              </button>
+            </div>
+  
+            <div class="product__info">
+              <span class="product__category">Waffle</span>
+              <h3 class="product__name">Waffle with Berries</h3>
+              <data class="product__price" value="6.50">$6.50</data>
+            </div>
             
-            <button class="product__add-to-cart-btn">
-              <svg class="icon" width="21" height="20" aria-hidden="true">
-                <use href="./assets/images/icon-add-to-cart.svg"></use>
-              </svg>
-              <span>Add to Cart</span>
-            </button>
-          </div>
+          </li>
+        </ul>
+      </main>
+    </section>
+  
+    <section class="shopping-cart-section">
+      <div class="shopping-cart">
+        <h2 class="shopping-cart__title">Your Cart (0)</h2>
+        <div class="shopping-cart__empty">
+          <svg class="shopping-cart__empty-icon icon" width="128" height="128" aria-hidden="true">
+            <use href="./assets/images/illustration-empty-cart.svg"></use>
+          </svg>
+          <p class="shopping-cart__empty-text">Your added items will appear here</p>
+        </div>
+      </div>
+    </section>
+  
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
 
-          <div class="product__info">
-            <span class="product__category">Waffle</span>
-            <h3 class="product__name">Waffle with Berries</h3>
-            <data class="product__price" value="6.50">$6.50</data>
-          </div>
-          
-        </li>
-      </ul>
-    </main>
-  </section>
-
-  Your Cart (<!-- Quantity -->)
-  Your added items will appear here
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
 
-  <script src="./js/script.js"></script>
+  <!-- <script src="./js/script.js"></script> -->
 </body>
 </html>
