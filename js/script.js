@@ -7,7 +7,7 @@ fetch("./data.json")
     data.forEach(item => {
       const price = item.price.toFixed(2)
       const li = document.createElement('li')
-      li.className = "dessert"
+      li.className = "product"
       li.innerHTML = 
       `
         <div class="product__image-wrapper">
