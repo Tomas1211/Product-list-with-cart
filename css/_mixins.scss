@@ -3,3 +3,9 @@
   height: auto;
   display: block;
 }
+
+@mixin listStyleTypeNone {
+  ul, ol {
+    list-style-type: none;
+  }
+}
