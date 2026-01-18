@@ -58,13 +58,59 @@
 
     <section class="shopping-cart-section">
       <div class="shopping-cart">
-        <h2 class="shopping-cart__title">Your Cart (0)</h2>
-        <div class="shopping-cart__empty">
+        <h2 class="shopping-cart__title">Your Cart <data value="3">(3)</data></h2>
+
+        <div class="shopping-cart__empty" style="display: none;">
           <svg class="shopping-cart__empty-icon icon" width="128" height="128" aria-hidden="true">
             <use href="./assets/images/illustration-empty-cart.svg"></use>
           </svg>
           <p class="shopping-cart__empty-text">Your added items will appear here</p>
         </div>
+
+        <div class="shopping-cart__order">
+          <ul id="shopping-cart__list">
+            <li class="shopping-cart__product">
+              <h3 class="shopping-cart__product-name">Classic Tiramisu</h3>
+              <div class="shopping-cart__product-pricing">
+                <data value="1" class="count">1x</data>
+                <data value="5.50" class="price-per-unit">$5.50</data>
+                <data value="5.50" class="price-for-all-units">$5.50</data>
+              </div>
+            </li>
+            <li class="shopping-cart__product">
+              <h3 class="shopping-cart__product-name">Classic Tiramisu</h3>
+              <div class="shopping-cart__product-pricing">
+                <data value="1" class="count">1x</data>
+                <data value="5.50" class="price-per-unit">$5.50</data>
+                <data value="5.50" class="price-for-all-units">$5.50</data>
+              </div>
+            </li>
+            <li class="shopping-cart__product">
+              <h3 class="shopping-cart__product-name">Classic Tiramisu</h3>
+              <div class="shopping-cart__product-pricing">
+                <data value="1" class="count">1x</data>
+                <data value="5.50" class="price-per-unit">$5.50</data>
+                <data value="5.50" class="price-for-all-units">$5.50</data>
+              </div>
+            </li>
+          </ul>
+          <div class="shopping-cart__order-total">
+            <p>Order Total</p>
+            <data value="16.50" class="shopping-cart__total-price">$16.50</data value="16.50">  
+          </div>
+        </div>
+
+        <div class="shopping-cart__message">
+          <p>
+            <svg class="shopping-cart__order-icon icon" width="21" height="20" aria-hidden="true">
+              <use href="./assets/images/icon-carbon-neutral.svg"></use>
+            </svg>
+            This is a <strong>carbon-neutral</strong> delivery
+          </p>
+        </div>
+        
+        <button class="shopping-cart__confirm-order-btn">Confirm Order</button>
+        
       </div>
     </section>
     
