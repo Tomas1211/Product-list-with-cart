@@ -95,6 +95,7 @@ img {
     color: $color-danger;
   }
   
+  /* EMPTY SHOPPING CART */
   &__empty {
     display: flex;
     flex-direction: column;
@@ -107,5 +108,82 @@ img {
 
   &__empty-text {
     color: $rose-500;
+  }
+
+  /* FILLED CART */
+  &__product {
+    font-size: .875rem;
+    padding: 1.125rem 0;
+    border-bottom: 1px solid $rose-100;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &__product-name {
+    color: $rose-900;
+    font-weight: 600;
+    margin-bottom: .75rem;
+  }
+
+  &__product-pricing {
+    .count {
+      color: $color-danger;
+      font-weight: 600;
+    }
+
+    .price-per-unit {
+      color: $rose-500;
+      
+      &::before {
+        content: '@';
+        margin-left: 8px;
+        margin-right: 5px;
+      }
+    }
+
+    .price-for-all-units {
+      color: $rose-500;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+  }
+
+  &__remove-product-icon {
+    background-image: url('../assets/images/icon-remove-item.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 1px solid $rose-300;
+    @include rounded(50%);
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  &__order-total {
+    margin: 2rem 0;
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__total-price {
+    font-size: 1.375rem;
+    font-weight: 700;
+  }
+
+  &__message {
+    background-color: $rose-50;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    @include rounded(.25rem);
+  }
+
+  &__confirm-order-btn {
+    @include confirmOrderBtn;
   }
 }

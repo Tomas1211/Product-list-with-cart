@@ -27,10 +27,23 @@
   color: $rose-900;
   font-size: clamp(.625rem, 3vw, .875rem);
   font-weight: 600;
-  padding: clamp(.5rem .9375rem, 2vw 4vw, .75rem 1.5625rem);
+  padding: 0.75rem 1.5625rem;
   border: 1px solid $rose-500;
   @include rounded(2.5rem);
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+
+@mixin confirmOrderBtn {
+  background-color: $color-danger;
+  color: $rose-100;
+  font-size: clamp(.625rem, 3vw, 1rem);
+  font-weight: 600;
+  padding: 1.125rem;
+  border: 1px solid $color-danger;
+  @include rounded(2.5rem);
+  width: 100%;
+  cursor: pointer;
 }

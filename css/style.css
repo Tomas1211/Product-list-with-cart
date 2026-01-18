@@ -62,15 +62,13 @@ img {
   color: hsl(14, 65%, 9%);
   font-size: clamp(0.625rem, 3vw, 0.875rem);
   font-weight: 600;
-  padding-top: clamp(0.5rem, 2vw, 0.75rem);
-  padding-bottom: clamp(0.5rem, 2vw, 0.75rem);
-  padding-left: clamp(0.9375rem, 4vw, 1.5625rem);
-  padding-right: clamp(0.9375rem, 4vw, 1.5625rem);
+  padding: 0.75rem 1.5625rem;
   border: 1px solid hsl(12, 20%, 44%);
   border-radius: 2.5rem;
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 .product__info {
   margin-top: 2.5rem;
@@ -100,6 +98,8 @@ img {
   margin: 2rem 0;
   padding: 1.5rem 2rem;
   border-radius: 0.5rem;
+  /* EMPTY SHOPPING CART */
+  /* FILLED CART */
 }
 .shopping-cart__title {
   color: hsl(14, 86%, 42%);
@@ -114,4 +114,72 @@ img {
 }
 .shopping-cart__empty-text {
   color: hsl(12, 20%, 44%);
+}
+.shopping-cart__product {
+  font-size: 0.875rem;
+  padding: 1.125rem 0;
+  border-bottom: 1px solid hsl(13, 31%, 94%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopping-cart__product:last-child {
+  border-bottom: none;
+}
+.shopping-cart__product-name {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.shopping-cart__product-pricing .count {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+.shopping-cart__product-pricing .price-per-unit {
+  color: hsl(12, 20%, 44%);
+}
+.shopping-cart__product-pricing .price-per-unit::before {
+  content: "@";
+  margin-left: 8px;
+  margin-right: 5px;
+}
+.shopping-cart__product-pricing .price-for-all-units {
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+  margin-left: 8px;
+}
+.shopping-cart__remove-product-icon {
+  background-image: url("../assets/images/icon-remove-item.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 1px solid hsl(14, 25%, 72%);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+}
+.shopping-cart__order-total {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-cart__total-price {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.shopping-cart__message {
+  background-color: hsl(20, 50%, 98%);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+.shopping-cart__confirm-order-btn {
+  background-color: hsl(14, 86%, 42%);
+  color: hsl(13, 31%, 94%);
+  font-size: clamp(0.625rem, 3vw, 1rem);
+  font-weight: 600;
+  padding: 1.125rem;
+  border: 1px solid hsl(14, 86%, 42%);
+  border-radius: 2.5rem;
+  width: 100%;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
