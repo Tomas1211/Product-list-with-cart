@@ -6,6 +6,7 @@
 
 img {
   @include image;
+  @include rounded;
 }
 
 .page {

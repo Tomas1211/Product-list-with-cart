@@ -6,6 +6,10 @@
   }
 }
 
+@mixin rounded($radius: 0.5rem) {
+  border-radius: $radius;
+}
+
 @mixin image {
   max-width: 100%;
   height: auto;
