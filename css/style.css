@@ -34,4 +34,24 @@ img {
 }
 .products-section__content {
   margin-top: 2.5rem;
+}
+
+.product__image-wrapper {
+  position: relative;
+}
+.product__add-to-cart-btn {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: hsl(14, 65%, 9%);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5625rem;
+  border: 1px solid hsl(12, 20%, 44%);
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

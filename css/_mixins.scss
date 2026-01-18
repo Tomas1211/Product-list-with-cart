@@ -21,3 +21,16 @@
     list-style-type: none;
   }
 }
+
+@mixin addToCartBtn {
+  background-color: #fff;
+  color: $rose-900;
+  font-size: .875rem;
+  font-weight: 600;
+  padding: .75rem 1.5625rem;
+  border: 1px solid $rose-500;
+  @include rounded(2.5rem);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

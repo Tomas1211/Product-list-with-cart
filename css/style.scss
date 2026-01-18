@@ -31,3 +31,17 @@ img {
     margin-top: 2.5rem;
   }
 }
+
+.product {
+  &__image-wrapper {
+    position: relative;
+  }
+  
+  &__add-to-cart-btn {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include addToCartBtn;
+  }
+}
