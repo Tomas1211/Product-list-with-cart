@@ -17,6 +17,7 @@ img {
 
 .page {
   min-height: 100dvh;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,4 +25,12 @@ img {
 
 .attribution {
   margin-top: auto;
+}
+
+.products-section__title {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.products-section__content {
+  margin-top: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
