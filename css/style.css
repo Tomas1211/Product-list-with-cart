@@ -1,3 +1,5 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&display=swap");
 /* COLORS */
 * {
   margin: 0;
@@ -7,6 +9,11 @@
 
 ul, ol {
   list-style-type: none;
+}
+
+body {
+  background-color: hsl(20, 50%, 98%);
+  font-family: "Red Hat Text", sans-serif;
 }
 
 img {
@@ -22,6 +29,8 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 428px;
+  margin: 0 auto;
 }
 
 .attribution {
@@ -29,13 +38,18 @@ img {
 }
 
 .products-section__title {
+  color: hsl(14, 65%, 9%);
   font-size: 2rem;
+  font-weight: 700;
   margin-top: 2rem;
 }
 .products-section__content {
   margin-top: 2.5rem;
 }
 
+.product {
+  margin-top: 1.5625rem;
+}
 .product__image-wrapper {
   position: relative;
 }
@@ -46,12 +60,58 @@ img {
   transform: translateX(-50%);
   background-color: #fff;
   color: hsl(14, 65%, 9%);
-  font-size: 0.875rem;
+  font-size: clamp(0.625rem, 3vw, 0.875rem);
   font-weight: 600;
-  padding: 0.75rem 1.5625rem;
+  padding-top: clamp(0.5rem, 2vw, 0.75rem);
+  padding-bottom: clamp(0.5rem, 2vw, 0.75rem);
+  padding-left: clamp(0.9375rem, 4vw, 1.5625rem);
+  padding-right: clamp(0.9375rem, 4vw, 1.5625rem);
   border: 1px solid hsl(12, 20%, 44%);
   border-radius: 2.5rem;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.product__info {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.product__category {
+  color: hsl(12, 20%, 44%);
+}
+.product__name {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+}
+.product__price {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+
+.shopping-cart-section {
+  align-self: stretch;
+}
+
+.shopping-cart {
+  background-color: #fff;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+}
+.shopping-cart__title {
+  color: hsl(14, 86%, 42%);
+}
+.shopping-cart__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.shopping-cart__empty-icon {
+  margin: 2rem 0;
+}
+.shopping-cart__empty-text {
+  color: hsl(12, 20%, 44%);
 }/*# sourceMappingURL=style.css.map */

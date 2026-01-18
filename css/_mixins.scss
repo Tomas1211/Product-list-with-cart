@@ -25,9 +25,9 @@
 @mixin addToCartBtn {
   background-color: #fff;
   color: $rose-900;
-  font-size: .875rem;
+  font-size: clamp(.625rem, 3vw, .875rem);
   font-weight: 600;
-  padding: .75rem 1.5625rem;
+  padding: clamp(.5rem .9375rem, 2vw 4vw, .75rem 1.5625rem);
   border: 1px solid $rose-500;
   @include rounded(2.5rem);
   display: flex;

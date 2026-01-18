@@ -4,6 +4,12 @@
 @include allElementsReset;
 @include listStyleTypeNone;
 
+
+body {
+  background-color: $rose-50;
+  font-family: $font-base;
+}
+
 img {
   @include image;
   @include rounded;
@@ -15,6 +21,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  max-width: 428px;
+  margin: 0 auto;
 }
 
 .attribution {
@@ -23,7 +32,9 @@ img {
 
 .products-section {
   &__title {
+    color: $rose-900;
     font-size: 2rem;
+    font-weight: 700;
     margin-top: 2rem;
   }
 
@@ -33,6 +44,8 @@ img {
 }
 
 .product {
+  margin-top: 1.5625rem;
+  
   &__image-wrapper {
     position: relative;
   }
@@ -43,5 +56,56 @@ img {
     left: 50%;
     transform: translateX(-50%);
     @include addToCartBtn;
+  }
+
+  &__info {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: .75rem;
+  }
+
+  &__category {
+    color: $rose-500;
+  }
+
+  &__name {
+    color: $rose-900;
+    font-weight: 600;
+  }
+
+  &__price {
+    color: $color-danger;
+    font-weight: 600;
+  }
+}
+
+.shopping-cart-section {
+  align-self: stretch;
+}
+
+.shopping-cart {
+  background-color: #fff;
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  @include rounded;
+
+  &__title {
+    color: $color-danger;
+  }
+  
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__empty-icon {
+    margin: 2rem 0;
+  }
+
+  &__empty-text {
+    color: $rose-500;
   }
 }
