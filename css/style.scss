@@ -1,6 +1,7 @@
 @import "_variables";
 @import "_mixins";
 
+@include allElementsReset;
 @include listStyleTypeNone;
 
 img {
